@@ -1,0 +1,70 @@
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0d122b, #1a203d);
+    color: white;
+    text-align: center;
+}
+
+.header {
+    padding: 60px 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff9900; /* AWS Orange */
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.2);
+    animation: slideUp 1.2s ease;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ff9900;
+    color: #0d122b;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffaa22;
+    transform: scale(1.07);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    opacity: 0.6;
+}
